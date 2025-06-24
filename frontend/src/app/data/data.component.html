@@ -1,0 +1,39 @@
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">EIT ANALYTICS</div>
+    <nav>
+      <ul>
+        <li><a routerLink="/home" class="nav-link"><span class="icon">📊</span> BI HOME</a></li>
+        <li><a routerLink="/dashboard" class="nav-link"><span class="icon">📈</span> DASHBOARD</a></li>
+        <li class="active"><a routerLink="/data" class="nav-link"><span class="icon">📂</span> DATA</a></li>
+        <li><a routerLink="/history" class="nav-link"><span class="icon">📜</span> HISTORY</a></li>
+        <li><a routerLink="/settings" class="nav-link"><span class="icon">⚙️</span> SETTINGS</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <header class="header">
+      <input type="text" placeholder="Search..." class="search-bar" />
+      <div class="header-actions">
+        <button class="import-button">Import Data+</button>
+        <button class="icon-button">⬆️⬇️</button>
+        <button class="icon-button">≡</button>
+        <button class="icon-button">☷</button>
+      </div>
+    </header>
+    <section class="data-section">
+      <div class="folder-header">
+        <button class="expand-button">+</button>
+        <span class="folder-icon">📁</span> Mvt Database
+      </div>
+      <div class="empty-message">No items in Mvt Database.</div>
+    </section>
+    <section class="data-section">
+      <div class="folder-header">
+        <button class="expand-button">+</button>
+        <span class="folder-icon">📁</span> Uploaded Csv
+      </div>
+      <div class="empty-message">No uploaded CSV files.</div>
+    </section>
+  </main>
+</div>

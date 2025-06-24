@@ -1,0 +1,151 @@
+.container {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #0b2a83;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 12px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a.nav-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li a.nav-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li.active a.nav-link {
+  color: #ffcc00;
+  font-weight: bolder;
+}
+
+nav ul li.active,
+nav ul li:hover {
+  background-color: #1a3dbf;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.main-content {
+  margin-left: 220px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.import-button {
+  padding: 8px 12px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.data-section {
+  background: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.folder-header {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.folder-icon {
+  margin-right: 8px;
+}
+
+.empty-message {
+  font-style: italic;
+  color: #666;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  text-align: center;
+}

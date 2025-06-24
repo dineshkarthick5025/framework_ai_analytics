@@ -1,0 +1,57 @@
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">EIT ANALYTICS</div>
+    <nav>
+      <ul>
+        <li><a routerLink="/home" class="nav-link"><span class="icon">📊</span> BI HOME</a></li>
+        <li class="active"><a routerLink="/dashboard" class="nav-link"><span class="icon">📈</span> DASHBOARD</a></li>
+        <li><a routerLink="/data" class="nav-link"><span class="icon">📂</span> DATA</a></li>
+        <li><a routerLink="/history" class="nav-link"><span class="icon">📜</span> HISTORY</a></li>
+        <li><a routerLink="/settings" class="nav-link"><span class="icon">⚙️</span> SETTINGS</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <!-- <header class="header">
+      <input type="text" placeholder="search Dashboard" class="search-bar" />
+      <div class="header-actions">
+        <button class="new-dashboard-btn">New Dashboard +</button>
+        <button class="ask-ai-btn">Ask AI</button>
+        <button class="icon-button">⇅</button>
+        <button class="icon-button">☰</button>
+        <button class="icon-button">▦</button>
+      </div>
+    </header> -->
+    <section class="dashboard-cards">
+      <div class="top-bar">
+        <div class="dashboard-name">
+          <input type="text" value="MVT Dasboard" />
+          <button class="edit-icon">✏️</button>
+        </div>
+        <button class="refresh-btn">⟳</button>
+        <button class="save-btn">Save</button>
+        <div class="action-buttons">
+          <button class="edit-design-btn">Edit Design</button>
+          <button class="share-btn" disabled>Share</button>
+          <button class="export-btn" disabled>Export</button>
+        </div>
+      </div>
+      <div class="content-area">
+        <div class="canvas-container">
+          <canvas id="dashboardCanvas"></canvas>
+        </div>
+        <div class="chatbot-container">
+          <div class="chatbot-header">Ask EITAI !!</div>
+          <div class="chatbot-messages">
+            <!-- Chat messages will appear here -->
+          </div>
+          <div class="chatbot-input-container">
+            <input type="text" placeholder="Ask Question on your data and get analytics" class="chatbot-input" />
+            <button class="chatbot-send-btn">🎤</button>
+            <button class="chatbot-send-btn">⬆</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>

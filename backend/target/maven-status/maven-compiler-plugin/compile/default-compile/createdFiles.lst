@@ -1,0 +1,7 @@
+com\example\userauthbackend\service\UserService.class
+com\example\userauthbackend\controller\AuthController.class
+com\example\userauthbackend\config\SecurityConfig.class
+com\example\userauthbackend\model\User.class
+com\example\userauthbackend\service\CustomUserDetailsService.class
+com\example\userauthbackend\UserAuthBackendApplication.class
+com\example\userauthbackend\repository\UserRepository.class

@@ -1,0 +1,29 @@
+<div class="container">
+  <aside class="sidebar">
+    <div class="logo">EIT ANALYTICS</div>
+    <nav>
+      <ul>
+        <li><a routerLink="/home" class="nav-link"><span class="icon">📊</span> BI HOME</a></li>
+        <li class="active"><a routerLink="/dashboard" class="nav-link"><span class="icon">📈</span> DASHBOARD</a></li>
+        <li><a routerLink="/data" class="nav-link"><span class="icon">📂</span> DATA</a></li>
+        <li><a routerLink="/history" class="nav-link"><span class="icon">📜</span> HISTORY</a></li>
+        <li><a routerLink="/settings" class="nav-link"><span class="icon">⚙️</span> SETTINGS</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <header class="header">
+      <input type="text" placeholder="search Dashboard" class="search-bar" />
+      <div class="header-actions">
+        <button class="new-dashboard-btn" routerLink="/newdashboard">New Dashboard +</button>
+        <button class="ask-ai-btn">Ask AI</button>
+        <button class="icon-button">⇅</button>
+        <button class="icon-button">☰</button>
+        <button class="icon-button">▦</button>
+      </div>
+    </header>
+    <section class="dashboard-cards">
+      <div class="empty-message">No dashboards to display.</div>
+    </section>
+  </main>
+</div>

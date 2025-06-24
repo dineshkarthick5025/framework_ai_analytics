@@ -1,0 +1,91 @@
+<div class="auth-container">
+  <div class="auth-toggle">
+    <button (click)="isLoginMode = true" [class.active]="isLoginMode">Login</button>
+    <button (click)="isLoginMode = false" [class.active]="!isLoginMode">Sign Up</button>
+  </div>
+
+  <form *ngIf="isLoginMode" [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()" class="auth-form">
+    <h2>Login</h2>
+    <label for="loginUsername">Username</label>
+    <input id="loginUsername" type="text" formControlName="username" placeholder="Enter your username" />
+    <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched" class="error">
+      Username is required.
+    </div>
+
+    <label for="loginPassword">Password</label>
+    <input id="loginPassword" type="password" formControlName="password" placeholder="Enter your password" />
+    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error">
+      Password is required.
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    <a href="#" (click)="onForgotPassword(); $event.preventDefault()" class="forgot-password">Forgot Password?</a>
+  </form>
+
+  <form *ngIf="!isLoginMode" [formGroup]="signUpForm" (ngSubmit)="onSignUpSubmit()" class="auth-form">
+    <h2>Sign Up</h2>
+
+    <label for="username">Username</label>
+    <input id="username" type="text" formControlName="username" placeholder="Enter your username" />
+    <div *ngIf="signUpForm.get('username')?.invalid && signUpForm.get('username')?.touched" class="error">
+      Username is required.
+    </div>
+
+    <label for="firstName">First Name</label>
+    <input id="firstName" type="text" formControlName="firstName" placeholder="Enter your first name" />
+    <div *ngIf="signUpForm.get('firstName')?.invalid && signUpForm.get('firstName')?.touched" class="error">
+      First name is required.
+    </div>
+
+    <label for="lastName">Last Name</label>
+    <input id="lastName" type="text" formControlName="lastName" placeholder="Enter your last name" />
+    <div *ngIf="signUpForm.get('lastName')?.invalid && signUpForm.get('lastName')?.touched" class="error">
+      Last name is required.
+    </div>
+
+    <label for="signUpEmail">Email</label>
+    <input id="signUpEmail" type="email" formControlName="email" placeholder="Enter your email" />
+    <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched" class="error">
+      Valid email is required.
+    </div>
+
+    <label for="signUpPassword">Password</label>
+    <input id="signUpPassword" type="password" formControlName="password" placeholder="Enter your password" />
+    <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched" class="error">
+      Password is required.
+    </div>
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input id="confirmPassword" type="password" formControlName="confirmPassword" placeholder="Confirm your password" />
+    <div *ngIf="signUpForm.get('confirmPassword')?.invalid && signUpForm.get('confirmPassword')?.touched" class="error">
+      Confirm password is required.
+    </div>
+
+    <label>
+      <input type="checkbox" formControlName="isBusiness" />
+      Register as Business Person
+    </label>
+
+    <div *ngIf="isBusiness" class="business-fields">
+      <label for="businessName">Business Name</label>
+      <input id="businessName" type="text" formControlName="businessName" placeholder="Enter your business name" />
+      <div *ngIf="signUpForm.get('businessName')?.invalid && signUpForm.get('businessName')?.touched" class="error">
+        Business name is required.
+      </div>
+
+      <label for="businessAddress">Business Address</label>
+      <input id="businessAddress" type="text" formControlName="businessAddress" placeholder="Enter your business address" />
+      <div *ngIf="signUpForm.get('businessAddress')?.invalid && signUpForm.get('businessAddress')?.touched" class="error">
+        Business address is required.
+      </div>
+
+      <label for="businessPhone">Business Phone</label>
+      <input id="businessPhone" type="text" formControlName="businessPhone" placeholder="Enter your business phone" />
+      <div *ngIf="signUpForm.get('businessPhone')?.invalid && signUpForm.get('businessPhone')?.touched" class="error">
+        Business phone is required.
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="signUpForm.invalid">Register</button>
+  </form>
+</div>
