@@ -9,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  sidebarVisible: boolean = true;
 
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 }

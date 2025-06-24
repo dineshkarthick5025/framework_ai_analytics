@@ -8,5 +8,9 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './newdashboard.component.css'
 })
 export class NewdashboardComponent {
+  sidebarVisible: boolean = true;
 
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 }

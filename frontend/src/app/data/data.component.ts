@@ -9,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./data.component.css']
 })
 export class DataComponent {
+  sidebarVisible: boolean = true;
 
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 }

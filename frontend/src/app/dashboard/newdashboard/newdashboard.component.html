@@ -1,5 +1,5 @@
 <div class="container">
-  <aside class="sidebar">
+  <aside [class.sidebar]="true" [class.hidden]="!sidebarVisible">
     <div class="logo">EIT ANALYTICS</div>
     <nav>
       <ul>
@@ -11,17 +11,17 @@
       </ul>
     </nav>
   </aside>
-  <main class="main-content">
-    <!-- <header class="header">
+  <main [class.main-content]="true" [class.expanded]="!sidebarVisible">
+    <header class="header">
+      <button class="icon-button hamburger" (click)="toggleSidebar()">☰</button>
       <input type="text" placeholder="search Dashboard" class="search-bar" />
       <div class="header-actions">
         <button class="new-dashboard-btn">New Dashboard +</button>
         <button class="ask-ai-btn">Ask AI</button>
         <button class="icon-button">⇅</button>
-        <button class="icon-button">☰</button>
         <button class="icon-button">▦</button>
       </div>
-    </header> -->
+    </header>
     <section class="dashboard-cards">
       <div class="top-bar">
         <div class="dashboard-name">

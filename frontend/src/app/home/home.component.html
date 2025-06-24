@@ -1,5 +1,5 @@
 <div class="container">
-  <aside class="sidebar">
+  <aside [class.sidebar]="true" [class.hidden]="!sidebarVisible">
     <div class="logo">EIT ANALYTICS</div>
     <nav>
       <ul>
@@ -11,8 +11,9 @@
       </ul>
     </nav>
   </aside>
-  <main class="main-content">
+  <main [class.main-content]="true" [class.expanded]="!sidebarVisible">
     <header class="header">
+      <button class="icon-button hamburger" (click)="toggleSidebar()">☰</button>
       <div class="welcome">👋 <strong>WELCOME BACK, EIT!</strong></div>
       <div class="user-actions">
         <button class="icon-button">👤</button>

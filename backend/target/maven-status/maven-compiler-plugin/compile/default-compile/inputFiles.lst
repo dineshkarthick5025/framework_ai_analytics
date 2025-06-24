@@ -1,7 +1,7 @@
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\repository\UserRepository.java
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\controller\AuthController.java
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\service\UserService.java
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\config\SecurityConfig.java
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\service\CustomUserDetailsService.java
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\UserAuthBackendApplication.java
-C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\ai_data_analytics frame\backend\src\main\java\com\example\userauthbackend\model\User.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\model\User.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\repository\UserRepository.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\UserAuthBackendApplication.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\service\UserService.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\service\CustomUserDetailsService.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\config\SecurityConfig.java
+C:\Users\Dinesh karthick V\OneDrive\Pictures\Desktop\framework_ai_analytics\backend\src\main\java\com\example\userauthbackend\controller\AuthController.java

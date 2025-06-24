@@ -9,5 +9,9 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./history.component.css']
 })
 export class HistoryComponent {
+  sidebarVisible: boolean = true;
 
+  toggleSidebar(): void {
+    this.sidebarVisible = !this.sidebarVisible;
+  }
 }
