@@ -1,38 +1,43 @@
+<!-- Add this in the head of your HTML or index.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <div class="container">
   <aside [class.sidebar]="true" [class.hidden]="!sidebarVisible">
     <div class="logo">EIT ANALYTICS</div>
     <nav>
       <ul>
-        <li><a routerLink="/home" class="nav-link"><span class="icon">📊</span> BI HOME</a></li>
-        <li><a routerLink="/dashboard" class="nav-link"><span class="icon">📈</span> DASHBOARD</a></li>
-        <li class="active"><a routerLink="/data" class="nav-link"><span class="icon">📂</span> DATA</a></li>
-        <li><a routerLink="/history" class="nav-link"><span class="icon">📜</span> HISTORY</a></li>
-        <li><a routerLink="/settings" class="nav-link"><span class="icon">⚙️</span> SETTINGS</a></li>
+        <li><a routerLink="/home" class="nav-link"><i class="fa-solid fa-chart-column icon"></i> BI HOME</a></li>
+        <li><a routerLink="/dashboard" class="nav-link"><i class="fa-solid fa-chart-line icon"></i> DASHBOARD</a></li>
+        <li class="active"><a routerLink="/data" class="nav-link"><i class="fa-solid fa-folder icon"></i> DATA</a></li>
+        <li><a routerLink="/history" class="nav-link"><i class="fa-solid fa-clock-rotate-left icon"></i> HISTORY</a></li>
+        <li><a routerLink="/settings" class="nav-link"><i class="fa-solid fa-gear icon"></i> SETTINGS</a></li>
       </ul>
     </nav>
   </aside>
   <main [class.main-content]="true" [class.expanded]="!sidebarVisible">
     <header class="header">
-      <button class="icon-button hamburger" (click)="toggleSidebar()">☰</button>
+      <!-- <button class="icon-button hamburger" (click)="toggleSidebar()"><i class="fa-solid fa-bars"></i></button> -->
       <input type="text" placeholder="Search..." class="search-bar" />
       <div class="header-actions">
         <button class="import-button">Import Data+</button>
-        <button class="icon-button">⬆️⬇️</button>
-        <button class="icon-button">≡</button>
-        <button class="icon-button">☷</button>
+        <button class="icon-button"><i class="fa-solid fa-arrow-up-arrow-down"></i></button>
+        <button class="icon-button"><i class="fa-solid fa-bars-staggered"></i></button>
+        <button class="icon-button"><i class="fa-solid fa-grip"></i></button>
       </div>
     </header>
+
     <section class="data-section">
       <div class="folder-header">
-        <button class="expand-button">+</button>
-        <span class="folder-icon">📁</span> Mvt Database
+        <button class="expand-button"><i class="fa-solid fa-plus"></i></button>
+        <i class="fa-solid fa-folder folder-icon"></i> Mvt Database
       </div>
       <div class="empty-message">No items in Mvt Database.</div>
     </section>
+
     <section class="data-section">
       <div class="folder-header">
-        <button class="expand-button">+</button>
-        <span class="folder-icon">📁</span> Uploaded Csv
+        <button class="expand-button"><i class="fa-solid fa-plus"></i></button>
+        <i class="fa-solid fa-folder folder-icon"></i> Uploaded Csv
       </div>
       <div class="empty-message">No uploaded CSV files.</div>
     </section>

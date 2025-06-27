@@ -1,37 +1,39 @@
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <div class="container">
   <aside [class.sidebar]="true" [class.hidden]="!sidebarVisible">
     <div class="logo">EIT ANALYTICS</div>
     <nav>
       <ul>
-        <li class="active"><a routerLink="/home" class="nav-link"><span class="icon">📊</span> BI HOME</a></li>
-        <li><a routerLink="/dashboard" class="nav-link"><span class="icon">📈</span> DASHBOARD</a></li>
-        <li><a routerLink="/data" class="nav-link"><span class="icon">📂</span> DATA</a></li>
-        <li><a routerLink="/history" class="nav-link"><span class="icon">📜</span> HISTORY</a></li>
-        <li><a routerLink="/settings" class="nav-link"><span class="icon">⚙️</span> SETTINGS</a></li>
+        <li class="active"><a routerLink="/home" class="nav-link"><span class="icon"><i class="fas fa-chart-pie"></i></span> BI HOME</a></li>
+        <li><a routerLink="/dashboard" class="nav-link"><span class="icon"><i class="fas fa-chart-line"></i></span> DASHBOARD</a></li>
+        <li><a routerLink="/data" class="nav-link"><span class="icon"><i class="fas fa-database"></i></span> DATA</a></li>
+        <li><a routerLink="/history" class="nav-link"><span class="icon"><i class="fas fa-history"></i></span> HISTORY</a></li>
+        <li><a routerLink="/settings" class="nav-link"><span class="icon"><i class="fas fa-cog"></i></span> SETTINGS</a></li>
       </ul>
     </nav>
   </aside>
   <main [class.main-content]="true" [class.expanded]="!sidebarVisible">
     <header class="header">
-      <button class="icon-button hamburger" (click)="toggleSidebar()">☰</button>
-      <div class="welcome">👋 <strong>WELCOME BACK, EIT!</strong></div>
+      <div class="welcome"><i class="fas fa-hand-spock"></i> <strong>WELCOME BACK, EIT!</strong></div>
       <div class="user-actions">
-        <button class="icon-button">👤</button>
-        <button class="icon-button" routerLink="/">↩️</button>
+        <button class="icon-button"><i class="fas fa-user"></i></button>
+        <button class="icon-button" routerLink="/"><i class="fas fa-sign-out-alt"></i></button>
       </div>
     </header>
     <section class="quick-actions">
       <h2>QUICK ACTIONS:</h2>
       <div class="actions">
-        <button>CREATE DASHBOARD</button>
-        <button>💬 ASK AI</button>
-        <button>🗄️ CONNECT NEW DATABASE</button>
-        <button>📁 UPLOAD DATA</button>
+        <button><i class="fas fa-plus-circle"></i> CREATE DASHBOARD</button>
+        <button><i class="fas fa-robot"></i> ASK AI</button>
+        <button><i class="fas fa-plug"></i> CONNECT NEW DATABASE</button>
+        <button><i class="fas fa-upload"></i> UPLOAD DATA</button>
       </div>
     </section>
     <section class="recently-generated">
-      <h2>📈 RECENTLY GENERATED</h2>
+      <h2><i class="fas fa-chart-line"></i> RECENTLY GENERATED</h2>
       <div class="empty-message">No recent items to display.</div>
     </section>
   </main>
-</div>

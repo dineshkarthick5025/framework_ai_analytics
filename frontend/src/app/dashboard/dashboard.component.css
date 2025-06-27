@@ -83,6 +83,9 @@ nav ul li:hover {
 .icon {
   margin-right: 14px;
   font-size: 1.2em;
+  width: 1.25em;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .main-content {
@@ -113,18 +116,7 @@ nav ul li:hover {
   padding-bottom: 15px;
 }
 
-.hamburger {
-  font-size: 1.6em;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #555;
-  transition: color 0.3s ease;
-}
 
-.hamburger:hover {
-  color: #1a3dbf;
-}
 
 .search-bar {
   flex-grow: 1;
@@ -146,19 +138,26 @@ nav ul li:hover {
   display: flex;
   gap: 15px;
   margin-left: 20px;
+  align-items: center;
 }
 
-.new-dashboard-btn {
-  background: #1a3dbf;
-  color: white;
+.new-dashboard-btn, .ask-ai-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   border: none;
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
-  box-shadow: 0 4px 8px rgba(26, 61, 191, 0.4);
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   text-transform: uppercase;
+}
+
+.new-dashboard-btn {
+  background: #1a3dbf;
+  color: white;
+  box-shadow: 0 4px 8px rgba(26, 61, 191, 0.4);
 }
 
 .new-dashboard-btn:hover {
@@ -169,14 +168,7 @@ nav ul li:hover {
 .ask-ai-btn {
   background: #4a90e2;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 700;
   box-shadow: 0 4px 8px rgba(74, 144, 226, 0.4);
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
-  text-transform: uppercase;
 }
 
 .ask-ai-btn:hover {
@@ -191,6 +183,10 @@ nav ul li:hover {
   cursor: pointer;
   color: #555;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5em;
 }
 
 .icon-button:hover {
@@ -253,14 +249,20 @@ nav ul li:hover {
     border-radius: 0;
   }
 
-  .quick-actions .actions {
-    flex-direction: column;
+  .header {
+    flex-wrap: wrap;
     gap: 15px;
   }
 
-  .quick-actions button {
-    flex: 1 1 auto;
-    padding: 18px 0;
-    font-size: 0.95em;
+  .search-bar {
+    order: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header-actions {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
